@@ -27,6 +27,7 @@ import {
 } from "./provider/slices/summary";
 // import {  Pie } from "react-chartjs-2";
 import { Pie } from "react-chartjs-2";
+import { Link } from "react-router-dom";
 // import { PDFSummary } from "./components/SummaryPdf";
 
 interface LogginResp {
@@ -182,6 +183,9 @@ export const App = () => {
               borderRadius: 5,
             }}
           >
+            <Button>
+              <a href="/sales-of-month">Ir Al Resumen Mensual</a>
+            </Button>
             <Button
               disabled={isPdfCreated}
               variant="contained"
