@@ -39,8 +39,8 @@ export const MonthlySalesPage = () => {
   const getDailySales = async () => {
     try {
       const { data } = await axios.get<MonthlySalesResponse>(
-        // "https://backend-harvey-production.up.railway.app/api/sales/",
-        "http://localhost:3000/api/sales/get-sales-details-of-month", //Esto es la version testing.
+        "https://backend-harvey-production.up.railway.app/api/sales/get-sales-details-of-month",
+        // "http://localhost:3000/api/sales/get-sales-details-of-month", //Esto es la version testing.
         {
           headers: {
             Authorization: `Bearer ${token}`,
