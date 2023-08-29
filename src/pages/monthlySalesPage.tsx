@@ -50,6 +50,7 @@ export const MonthlySalesPage = () => {
 
       setDatishaa(data);
     } catch (error) {
+      console.log("anashe");
       console.error(error);
     }
   };
